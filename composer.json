@@ -12,7 +12,6 @@
     "require": {
 	    "cweagans/composer-patches": "^1.6.0",
 	    "drupal-composer/drupal-scaffold": "^2.0.0",
-	    "drupal/lightning": "^4.0",
 	    "drupal/lightning_api": "^4.1",
 	    "drupal/lightning_core": "^4.1",
 	    "drupal/lightning_layout": "2.x-dev",
