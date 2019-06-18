@@ -26,7 +26,7 @@ function pacifica_set_logo() {
   Drupal::configFactory()
     ->getEditable('system.theme.global')
     ->set('logo', [
-      'path' => $pacifica_path . '/Pacifica.png',
+      'path' => $pacifica_path . '/Pacifica-small.png',
       'url' => '',
       'use_default' => FALSE,
     ])
