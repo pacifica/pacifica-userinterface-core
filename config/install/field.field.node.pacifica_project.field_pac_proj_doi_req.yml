@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pac_proj_doi_req
+    - node.type.pacifica_project
+id: node.pacifica_project.field_pac_proj_doi_req
+field_name: field_pac_proj_doi_req
+entity_type: node
+bundle: pacifica_project
+label: 'DOI required'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Open data - DOI required'
+  off_label: 'DOI not required'
+field_type: boolean

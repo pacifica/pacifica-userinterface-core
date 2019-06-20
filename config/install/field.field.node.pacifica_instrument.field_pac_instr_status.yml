@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pac_instr_status
+    - node.type.pacifica_instrument
+id: node.pacifica_instrument.field_pac_instr_status
+field_name: field_pac_instr_status
+entity_type: node
+bundle: pacifica_instrument
+label: 'Instrument status'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Active
+  off_label: Inactive
+field_type: boolean

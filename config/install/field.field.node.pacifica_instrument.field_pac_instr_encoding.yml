@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pac_instr_encoding
+    - node.type.pacifica_instrument
+id: node.pacifica_instrument.field_pac_instr_encoding
+field_name: field_pac_instr_encoding
+entity_type: node
+bundle: pacifica_instrument
+label: 'Instrument encoding'
+description: 'Instrument encoding'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

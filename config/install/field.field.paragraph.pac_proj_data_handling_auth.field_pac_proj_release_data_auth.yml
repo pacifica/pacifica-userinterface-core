@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pac_proj_release_data_auth
+    - paragraphs.paragraphs_type.pac_proj_data_handling_auth
+id: paragraph.pac_proj_data_handling_auth.field_pac_proj_release_data_auth
+field_name: field_pac_proj_release_data_auth
+entity_type: paragraph
+bundle: pac_proj_data_handling_auth
+label: 'Allowed to publicly release data '
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

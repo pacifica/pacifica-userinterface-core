@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pac_proj_project_member
+    - paragraphs.paragraphs_type.pac_proj_data_handling_auth
+id: paragraph.pac_proj_data_handling_auth.field_pac_proj_project_member
+field_name: field_pac_proj_project_member
+entity_type: paragraph
+bundle: pac_proj_data_handling_auth
+label: 'Project member'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: pac_proj_internal_data_storage
+label: 'PNNL data storage'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

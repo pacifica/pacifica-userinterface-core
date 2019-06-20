@@ -1,0 +1,12 @@
+pacifica.admin:
+  description: 'The Pacifica Module Settings Page'
+  parent: system.admin_config_development
+  route_name: pacfica.content
+  title: 'Pacifica Module Settings'
+  weight: 100
+pacifica.consumer_settings: null
+pacifica.pacifica_settings:
+  description: 'Pacifica admin settings'
+  parent: system_admin_config_development
+  route_name: pacifica.settings
+pacifica.rabbitmq_settings: null

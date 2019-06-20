@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_pac_proj_data_size
+field_name: field_pac_proj_data_size
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: KB
+      label: KB
+    -
+      value: MB
+      label: MB
+    -
+      value: GB
+      label: GB
+    -
+      value: TB
+      label: TB
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

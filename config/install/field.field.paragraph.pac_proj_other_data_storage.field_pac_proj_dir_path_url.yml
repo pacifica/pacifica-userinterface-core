@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pac_proj_dir_path_url
+    - paragraphs.paragraphs_type.pac_proj_other_data_storage
+id: paragraph.pac_proj_other_data_storage.field_pac_proj_dir_path_url
+field_name: field_pac_proj_dir_path_url
+entity_type: paragraph
+bundle: pac_proj_other_data_storage
+label: Directory/Path/URL
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

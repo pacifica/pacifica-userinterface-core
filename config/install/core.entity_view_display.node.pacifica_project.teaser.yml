@@ -1,0 +1,67 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pacifica_project.field_pac_proj_citation
+    - field.field.node.pacifica_project.field_pac_proj_created
+    - field.field.node.pacifica_project.field_pac_proj_data_access
+    - field.field.node.pacifica_project.field_pac_proj_data_archive
+    - field.field.node.pacifica_project.field_pac_proj_data_description
+    - field.field.node.pacifica_project.field_pac_proj_data_handling_aut
+    - field.field.node.pacifica_project.field_pac_proj_data_size
+    - field.field.node.pacifica_project.field_pac_proj_deleted
+    - field.field.node.pacifica_project.field_pac_proj_description
+    - field.field.node.pacifica_project.field_pac_proj_doi_req
+    - field.field.node.pacifica_project.field_pac_proj_dois
+    - field.field.node.pacifica_project.field_pac_proj_encoding
+    - field.field.node.pacifica_project.field_pac_proj_files
+    - field.field.node.pacifica_project.field_pac_proj_icon_large
+    - field.field.node.pacifica_project.field_pac_proj_id
+    - field.field.node.pacifica_project.field_pac_proj_institutions
+    - field.field.node.pacifica_project.field_pac_proj_instrumentation
+    - field.field.node.pacifica_project.field_pac_proj_internal_storage
+    - field.field.node.pacifica_project.field_pac_proj_logo
+    - field.field.node.pacifica_project.field_pac_proj_name
+    - field.field.node.pacifica_project.field_pac_proj_name_short
+    - field.field.node.pacifica_project.field_pac_proj_other_storage
+    - field.field.node.pacifica_project.field_pac_proj_status
+    - field.field.node.pacifica_project.field_pac_proj_updated
+    - node.type.pacifica_project
+  module:
+    - user
+id: node.pacifica_project.teaser
+targetEntityType: node
+bundle: pacifica_project
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_pac_proj_citation: true
+  field_pac_proj_created: true
+  field_pac_proj_data_access: true
+  field_pac_proj_data_archive: true
+  field_pac_proj_data_description: true
+  field_pac_proj_data_handling_aut: true
+  field_pac_proj_data_size: true
+  field_pac_proj_deleted: true
+  field_pac_proj_description: true
+  field_pac_proj_doi_req: true
+  field_pac_proj_dois: true
+  field_pac_proj_encoding: true
+  field_pac_proj_files: true
+  field_pac_proj_icon_large: true
+  field_pac_proj_id: true
+  field_pac_proj_institutions: true
+  field_pac_proj_instrumentation: true
+  field_pac_proj_internal_storage: true
+  field_pac_proj_logo: true
+  field_pac_proj_name: true
+  field_pac_proj_name_short: true
+  field_pac_proj_other_storage: true
+  field_pac_proj_status: true
+  field_pac_proj_updated: true

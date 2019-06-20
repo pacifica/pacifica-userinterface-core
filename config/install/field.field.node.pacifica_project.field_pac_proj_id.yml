@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pac_proj_id
+    - node.type.pacifica_project
+id: node.pacifica_project.field_pac_proj_id
+field_name: field_pac_proj_id
+entity_type: node
+bundle: pacifica_project
+label: 'Project ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,42 @@
+pacifica.about:
+  defaults:
+    _controller: '\Drupal\pacifica\Controller\PageController::about'
+    _title: 'About DataHub'
+  path: /datahub/about
+  requirements:
+    _access: 'TRUE'
+pacifica.consumer.settings_form:
+  defaults:
+    _form: \Drupal\pacifica\Form\ConsumerSettingsForm
+    _title: 'Consumer Configuration'
+  options:
+    _admin_route: true
+  path: /admin/config/system/pacifica/consumer
+  requirements:
+    _permission: 'administer site configuration'
+pacifica.project:
+  defaults:
+    _controller: '\Drupal\pacifica\Controller\PageController::project'
+    _title: 'Project Page'
+  path: '/datahub/project/{projectId}'
+  requirements:
+    _access: 'TRUE'
+    projectId: \d+
+pacifica.rabbitmq.settings_form:
+  defaults:
+    _form: \Drupal\pacifica\Form\RabbitmqSettingsForm
+    _title: 'RabbitMQ Configuration'
+  options:
+    _admin_route: true
+  path: /admin/config/system/pacifica/rabbitmq
+  requirements:
+    _permission: 'administer site configuration'
+pacifica.settings_form:
+  defaults:
+    _form: \Drupal\pacifica\Form\PacificaSettingsForm
+    _title: 'Pacifica Configuration'
+  options:
+    _admin_route: true
+  path: /admin/config/system/pacifica
+  requirements:
+    _permission: 'administer site configuration'

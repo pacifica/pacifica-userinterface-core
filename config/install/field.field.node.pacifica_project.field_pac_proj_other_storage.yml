@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pac_proj_other_storage
+    - node.type.pacifica_project
+    - paragraphs.paragraphs_type.pac_proj_other_data_storage
+  module:
+    - entity_reference_revisions
+id: node.pacifica_project.field_pac_proj_other_storage
+field_name: field_pac_proj_other_storage
+entity_type: node
+bundle: pacifica_project
+label: 'Other storage'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      pac_proj_other_data_storage: pac_proj_other_data_storage
+    target_bundles_drag_drop:
+      other_data_storage:
+        weight: 4
+        enabled: false
+      pac_internal_data_storage:
+        weight: 5
+        enabled: false
+      pac_proj_instrumentation:
+        weight: 6
+        enabled: false
+      pac_proj_data_handling_auth:
+        weight: 8
+        enabled: false
+      pac_proj_other_data_storage:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions

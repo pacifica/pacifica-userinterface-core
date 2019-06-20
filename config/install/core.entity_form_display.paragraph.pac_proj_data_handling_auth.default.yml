@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pac_proj_data_handling_auth.field_pac_proj_project_member
+    - field.field.paragraph.pac_proj_data_handling_auth.field_pac_proj_release_data_auth
+    - field.field.paragraph.pac_proj_data_handling_auth.field_pac_proj_upload_data_auth
+    - paragraphs.paragraphs_type.pac_proj_data_handling_auth
+id: paragraph.pac_proj_data_handling_auth.default
+targetEntityType: paragraph
+bundle: pac_proj_data_handling_auth
+mode: default
+content:
+  field_pac_proj_project_member:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_pac_proj_release_data_auth:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_pac_proj_upload_data_auth:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+hidden:
+  created: true
+  status: true

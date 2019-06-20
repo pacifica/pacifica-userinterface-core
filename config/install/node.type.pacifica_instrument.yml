@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - pacifica
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Pacifica Instrument'
+type: pacifica_instrument
+description: 'Content type used to create <em>Pacific Instruments</em> for DataHub'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true
