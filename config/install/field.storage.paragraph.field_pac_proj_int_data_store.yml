@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_pac_proj_int_data_store
+field_name: field_pac_proj_int_data_store
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: constance
+      label: Constance/PIC
+    -
+      value: emsl
+      label: EMSLfs
+    -
+      value: git
+      label: 'Git Repository'
+    -
+      value: myshares
+      label: MyShares
+    -
+      value: pithos
+      label: 'Pithos Archive'
+    -
+      value: aurora
+      label: 'Aurora Archive'
+    -
+      value: datarepo
+      label: 'Data Repository'
+    -
+      value: other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pac_proj_data_size
+    - node.type.pacifica_project
+  module:
+    - options
+id: node.pacifica_project.field_pac_proj_data_size
+field_name: field_pac_proj_data_size
+entity_type: node
+bundle: pacifica_project
+label: 'Average dataset size'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

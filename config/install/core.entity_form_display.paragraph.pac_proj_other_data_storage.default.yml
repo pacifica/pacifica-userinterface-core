@@ -1,0 +1,55 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pac_proj_other_data_storage.field_pac_proj_comments_descrip
+    - field.field.paragraph.pac_proj_other_data_storage.field_pac_proj_device_type
+    - field.field.paragraph.pac_proj_other_data_storage.field_pac_proj_dir_path_url
+    - field.field.paragraph.pac_proj_other_data_storage.field_pac_proj_int_owned
+    - field.field.paragraph.pac_proj_other_data_storage.field_pac_proj_property_tag
+    - paragraphs.paragraphs_type.pac_proj_other_data_storage
+id: paragraph.pac_proj_other_data_storage.default
+targetEntityType: paragraph
+bundle: pac_proj_other_data_storage
+mode: default
+content:
+  field_pac_proj_comments_descrip:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_pac_proj_device_type:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_pac_proj_dir_path_url:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_pac_proj_int_owned:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_pac_proj_property_tag:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

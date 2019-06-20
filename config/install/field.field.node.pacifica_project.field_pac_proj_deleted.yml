@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pac_proj_deleted
+    - node.type.pacifica_project
+id: node.pacifica_project.field_pac_proj_deleted
+field_name: field_pac_proj_deleted
+entity_type: node
+bundle: pacifica_project
+label: 'Project deleted'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1554149447
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

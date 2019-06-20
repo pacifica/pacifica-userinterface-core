@@ -1,0 +1,10 @@
+pacifica.settings_form:
+  description: 'Configure Pacifica API settings.'
+  parent: system.admin_config_system
+  route_name: pacifica.settings_form
+  title: 'Pacifica settings'
+pacifica.settings_form_link:
+  description: 'Configure Pacifica API settings.'
+  menu_name: pacifica
+  route_name: pacifica.settings_form
+  title: 'Pacifica settings'

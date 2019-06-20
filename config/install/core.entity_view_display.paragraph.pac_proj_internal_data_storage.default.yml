@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pac_proj_internal_data_storage.field_pac_proj_comments_descrip
+    - field.field.paragraph.pac_proj_internal_data_storage.field_pac_proj_dir_path_url
+    - field.field.paragraph.pac_proj_internal_data_storage.field_pac_proj_int_data_store
+    - paragraphs.paragraphs_type.pac_proj_internal_data_storage
+  module:
+    - options
+id: paragraph.pac_proj_internal_data_storage.default
+targetEntityType: paragraph
+bundle: pac_proj_internal_data_storage
+mode: default
+content:
+  field_pac_proj_comments_descrip:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_pac_proj_dir_path_url:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_pac_proj_int_data_store:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

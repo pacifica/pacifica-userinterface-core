@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_pac_proj_data_access
+field_name: field_pac_proj_data_access
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: open
+      label: 'Open Data - Releasable to Public'
+    -
+      value: restricted
+      label: 'Restricted Data - PNNL or Project'
+    -
+      value: both
+      label: 'Both - Combination of Open and Restricted'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

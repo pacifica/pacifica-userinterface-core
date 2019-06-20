@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pac_proj_int_owned
+    - paragraphs.paragraphs_type.pac_proj_other_data_storage
+id: paragraph.pac_proj_other_data_storage.field_pac_proj_int_owned
+field_name: field_pac_proj_int_owned
+entity_type: paragraph
+bundle: pac_proj_other_data_storage
+label: 'PNNL owned'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

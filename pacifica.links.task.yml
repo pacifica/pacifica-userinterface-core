@@ -1,0 +1,15 @@
+pacifica.consumer.settings_form:
+  base_route: pacifica.settings_form
+  route_name: pacifica.consumer.settings_form
+  title: Consumer
+  weight: 3
+pacifica.rabbitmq.settings_form:
+  base_route: pacifica.settings_form
+  route_name: pacifica.rabbitmq.settings_form
+  title: RabbitMQ
+  weight: 2
+pacifica.settings_form:
+  base_route: pacifica.settings_form
+  route_name: pacifica.settings_form
+  title: Pacifica
+  weight: 1

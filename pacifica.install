@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * {@inheritdoc}
+ *
+ * Deletes the all pacifica configs from database.
+ */
+function pacifica_uninstall() {
+  $module_dir = drupal_get_path('module', 'pacifica');
+  $config_dir = $module_dir . '/config/install';
+  $config_dir_files = scandir($config_dir);
+  foreach ($config_dir_files as $file) {
+    if (substr($file, -3) == 'yml') {
+      $config = str_replace('.yml', '', $file);
+      \Drupal::service('config.factory')->getEditable($config)->delete();
+    }
+  }
+
+}

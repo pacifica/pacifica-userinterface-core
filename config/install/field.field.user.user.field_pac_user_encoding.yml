@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_pac_user_encoding
+  module:
+    - user
+id: user.user.field_pac_user_encoding
+field_name: field_pac_user_encoding
+entity_type: user
+bundle: user
+label: 'Pacifica Encoding'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

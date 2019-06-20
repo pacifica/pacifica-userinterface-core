@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pac_proj_institutions
+    - node.type.pacifica_institution
+    - node.type.pacifica_project
+id: node.pacifica_project.field_pac_proj_institutions
+field_name: field_pac_proj_institutions
+entity_type: node
+bundle: pacifica_project
+label: Institutions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      pacifica_institution: pacifica_institution
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

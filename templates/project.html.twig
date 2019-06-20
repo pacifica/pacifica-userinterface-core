@@ -1,0 +1,91 @@
+<div class="datahub-project">
+    {{ project_logo|raw }}
+    <h1 class="datahub-project-title">
+        {{ project_title }}
+    </h1>
+
+    <div class="datahub-project-area-main">
+        <section id="datahub-project-section-overview">
+            <h2 class="datahub-project-section-title">
+                Overview
+            </h2>
+            <p class="datahub-project-section-content">
+                {{ overview_text|raw }}
+            </p>
+        </section>
+
+        <section id="datahub-project-section-data">
+            <h2 class="datahub-project-section-title">
+                About Data
+            </h2>
+            <p class="datahub-project-section-content">
+                {{ data_description|raw }}
+            </p>
+            {% if file_urls is not empty %}
+                <ul class="datahub-project-data-files">
+                    {% for link_title, file_url in file_urls %}
+                        <li><a href="{{ file_url }}">{{ link_title }}</a></li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </section>
+    </div>
+
+    <div class="datahub-project-area-secondary">
+        {% if author_names is not empty %}
+            <section id="datahub-project-section-authors">
+                <h2 class="datahub-project-section-title">
+                    Participants
+                </h2>
+                <ul class="datahub-project-section-content" id="datahub-project-author-list">
+                    {% for author_name in author_names %}
+                        <li>{{ author_name }}</li>
+                    {% endfor %}
+                </ul>
+            </section>
+        {% endif %}
+
+        {% if institution_names is not empty %}
+            <section id="datahub-project-section-institutions">
+                <h2 class="datahub-project-section-title">
+                    Collaborators
+                </h2>
+                <ul class="datahub-project-section-content" id="datahub-project-institution-list">
+                    {% for institution_name in institution_names %}
+                        <li>{{ institution_name }}</li>
+                    {% endfor %}
+                </ul>
+            </section>
+        {% endif %}
+
+        {% if dois is not empty %}
+            <section id="datahub-project-section-dois">
+                <h2 class="datahub-project-section-title">
+                    Digital Object Identifiers
+                </h2>
+                <ul class="datahub-project-section-content" id="datahub-project-doi-list">
+                    {% for doi in dois %}
+                        <li><a href="{{ doi }}">{{ doi }}</a></li>
+                    {% endfor %}
+                </ul>
+            </section>
+        {% endif %}
+
+        {% if citation_text|length > 0 %}
+            <section id="datahub-project-section-citation">
+                <h2 class="datahub-project-section-title">
+                    Citation
+                </h2>
+                <p id="datahub-project-citation-text" class="datahub-project-section-content">
+                    {{ citation_text }}
+                </p>
+                <a id="citation-copy-btn"
+                   class="datahub-button"
+                   href="javascript:void(window.prompt('Copy to clipboard: Ctrl+C, Enter', document.getElementById('datahub-project-citation-text').innerHTML))"
+                >
+                    Copy Citation
+                </a>
+            </section>
+        {% endif %}
+    </div>
+</div>

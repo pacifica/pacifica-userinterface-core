@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: pac_proj_other_data_storage
+label: 'Other data storage'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

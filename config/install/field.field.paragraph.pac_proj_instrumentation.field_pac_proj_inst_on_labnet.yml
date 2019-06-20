@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pac_proj_inst_on_labnet
+    - paragraphs.paragraphs_type.pac_proj_instrumentation
+id: paragraph.pac_proj_instrumentation.field_pac_proj_inst_on_labnet
+field_name: field_pac_proj_inst_on_labnet
+entity_type: paragraph
+bundle: pac_proj_instrumentation
+label: 'On LabNet'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

@@ -1,0 +1,300 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pacifica_project.field_pac_proj_citation
+    - field.field.node.pacifica_project.field_pac_proj_created
+    - field.field.node.pacifica_project.field_pac_proj_data_access
+    - field.field.node.pacifica_project.field_pac_proj_data_archive
+    - field.field.node.pacifica_project.field_pac_proj_data_description
+    - field.field.node.pacifica_project.field_pac_proj_data_handling_aut
+    - field.field.node.pacifica_project.field_pac_proj_data_size
+    - field.field.node.pacifica_project.field_pac_proj_deleted
+    - field.field.node.pacifica_project.field_pac_proj_description
+    - field.field.node.pacifica_project.field_pac_proj_doi_req
+    - field.field.node.pacifica_project.field_pac_proj_dois
+    - field.field.node.pacifica_project.field_pac_proj_encoding
+    - field.field.node.pacifica_project.field_pac_proj_files
+    - field.field.node.pacifica_project.field_pac_proj_icon_large
+    - field.field.node.pacifica_project.field_pac_proj_id
+    - field.field.node.pacifica_project.field_pac_proj_institutions
+    - field.field.node.pacifica_project.field_pac_proj_instrumentation
+    - field.field.node.pacifica_project.field_pac_proj_internal_storage
+    - field.field.node.pacifica_project.field_pac_proj_logo
+    - field.field.node.pacifica_project.field_pac_proj_name
+    - field.field.node.pacifica_project.field_pac_proj_name_short
+    - field.field.node.pacifica_project.field_pac_proj_num_datasets
+    - field.field.node.pacifica_project.field_pac_proj_other_storage
+    - field.field.node.pacifica_project.field_pac_proj_status
+    - field.field.node.pacifica_project.field_pac_proj_total_file_size
+    - field.field.node.pacifica_project.field_pac_proj_updated
+    - image.style.thumbnail
+    - node.type.pacifica_project
+  module:
+    - link
+    - paragraphs
+    - path
+    - svg_image
+    - text
+id: node.pacifica_project.default
+targetEntityType: node
+bundle: pacifica_project
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pac_proj_citation:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_pac_proj_created:
+    weight: 23
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp
+    region: content
+  field_pac_proj_data_access:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_pac_proj_data_archive:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_pac_proj_data_description:
+    weight: 29
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_pac_proj_data_handling_aut:
+    type: entity_reference_paragraphs
+    weight: 12
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_pac_proj_data_size:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_pac_proj_deleted:
+    weight: 24
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp
+    region: content
+  field_pac_proj_description:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_pac_proj_doi_req:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_pac_proj_dois:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_pac_proj_encoding:
+    weight: 20
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_pac_proj_files:
+    weight: 30
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_pac_proj_icon_large:
+    weight: 31
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_pac_proj_id:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_pac_proj_institutions:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pac_proj_instrumentation:
+    type: entity_reference_paragraphs
+    weight: 7
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_pac_proj_internal_storage:
+    type: entity_reference_paragraphs
+    weight: 10
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_pac_proj_logo:
+    weight: 32
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_pac_proj_name:
+    weight: 19
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_pac_proj_name_short:
+    weight: 21
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_pac_proj_num_datasets:
+    weight: 33
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_pac_proj_other_storage:
+    type: entity_reference_paragraphs
+    weight: 11
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_pac_proj_status:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_pac_proj_total_file_size:
+    weight: 34
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_pac_proj_updated:
+    weight: 22
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp
+    region: content
+  path:
+    type: path
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 18
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 13
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

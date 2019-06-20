@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * @file
+ * Pacifica Drupal module file.
+ */
+
+use Drupal\pacifica\Controller\RabbitmqConsumer;
+
+/**
+ * Implements hook_cron().
+ */
+function pacifica_cron() {
+
+  $consumer_config = \Drupal::config('pacifica.consumer.settings');
+  $consumer_enable = $consumer_config->get('consumer_enable');
+
+  if ($consumer_enable) {
+    $consumer = new RabbitmqConsumer();
+    $consumer->consume();
+  }
+
+}
+
+/**
+ * Implements hook_theme().
+ *
+ * Project Variables:
+ *  - string project_id
+ *   The unique ID of the project.
+ *  - string project_title
+ *   The project's title.
+ *  - string overview_text
+ *   A paragraph summarizing the project.
+ *  - string data_description
+ *   A paragraph describing the project's data and how it can be used.
+ *  - string[] author_names
+ *   The names of all authors associated with the project.
+ *  - string[] institution_names
+ *   The names of all institutions associated with the project.
+ *  - string[] dois
+ *   All DOIs associated with the project.
+ *  - string citation_text
+ *   The text to be used in citing this project.
+ *  - string project_logo_url
+ *   The URL of the project's logo, if it has one.
+ *  - string file_urls
+ *   The URLs of any data files associated with the project.
+ */
+function pacifica_theme($existing, $type, $theme, $path): array {
+  return [
+    'about' => [
+      'variables' => [],
+    ],
+    'project' => [
+      'variables' => [
+        'project_id' => NULL,
+        'project_title' => NULL,
+        'overview_text' => NULL,
+        'data_description' => NULL,
+        'author_names' => [],
+        'institution_names' => [],
+        'dois' => [],
+        'citation_text' => NULL,
+        'project_logo' => NULL,
+        'file_urls' => [],
+      ],
+    ],
+  ];
+}

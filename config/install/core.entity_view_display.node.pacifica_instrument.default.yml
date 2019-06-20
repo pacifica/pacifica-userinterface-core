@@ -1,0 +1,99 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pacifica_instrument.field_pac_instr_created
+    - field.field.node.pacifica_instrument.field_pac_instr_deleted
+    - field.field.node.pacifica_instrument.field_pac_instr_encoding
+    - field.field.node.pacifica_instrument.field_pac_instr_id
+    - field.field.node.pacifica_instrument.field_pac_instr_name
+    - field.field.node.pacifica_instrument.field_pac_instr_short_name
+    - field.field.node.pacifica_instrument.field_pac_instr_status
+    - field.field.node.pacifica_instrument.field_pac_instr_updated
+    - node.type.pacifica_instrument
+  module:
+    - user
+id: node.pacifica_instrument.default
+targetEntityType: node
+bundle: pacifica_instrument
+mode: default
+content:
+  field_pac_instr_created:
+    type: timestamp
+    weight: 1
+    region: content
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_pac_instr_deleted:
+    type: timestamp
+    weight: 2
+    region: content
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_pac_instr_encoding:
+    type: string
+    weight: 4
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_pac_instr_id:
+    type: number_integer
+    weight: 5
+    region: content
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_pac_instr_name:
+    type: string
+    weight: 6
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_pac_instr_short_name:
+    type: string
+    weight: 7
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_pac_instr_status:
+    weight: 8
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_pac_instr_updated:
+    type: timestamp
+    weight: 9
+    region: content
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

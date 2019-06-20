@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pac_proj_num_datasets
+    - node.type.pacifica_project
+id: node.pacifica_project.field_pac_proj_num_datasets
+field_name: field_pac_proj_num_datasets
+entity_type: node
+bundle: pacifica_project
+label: 'Number of Datasets'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

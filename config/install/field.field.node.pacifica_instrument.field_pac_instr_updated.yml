@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pac_instr_updated
+    - node.type.pacifica_instrument
+id: node.pacifica_instrument.field_pac_instr_updated
+field_name: field_pac_instr_updated
+entity_type: node
+bundle: pacifica_instrument
+label: 'Instrument updated'
+description: 'Instrument updated'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp
