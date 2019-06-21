@@ -1,7 +1,7 @@
 {
     "name": "pacifica/userinterface-core",
-    "description": "Drupal core profile for Pacifica user interfaces.",
-    "type": "drupal-profile",
+    "description": "Drupal core module for Pacifica user interfaces.",
+    "type": "drupal-module",
     "license": "LGPL-3.0-or-later",
     "authors": [
         {
